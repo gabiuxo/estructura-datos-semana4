@@ -11,7 +11,7 @@ public class Hanoi {
 
     public static void main(String[] args) {
         initializeStack(4);
-        System.out.println("PILAS INICIALES");
+        System.out.println("\nPILAS INICIALES");
         showStacks();
 
         hanoi(stack1, stack2, stack3, 4);

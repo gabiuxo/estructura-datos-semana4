@@ -1,43 +1,43 @@
-public class act3 { 
-    public static int SIZE = 9; // Declaración que define el tamaño del tablero 
+public class act3 {
+    public static int SIZE = 9; // Declaración que define el tamaño del tablero
 
     // Sudoku nivel facil
     static int sudokuFacil[][] = { // Declaración de una matriz para el sudoku fácil
-            { 5, 3, 0, 0, 7, 0, 0, 0, 0 },
-            { 6, 0, 0, 1, 9, 5, 0, 0, 0 },
-            { 0, 9, 8, 0, 0, 0, 0, 6, 0 },
-            { 8, 0, 0, 0, 6, 0, 0, 0, 3 },
-            { 4, 0, 0, 8, 0, 3, 0, 0, 1 },
-            { 7, 0, 0, 0, 2, 0, 0, 0, 6 },
-            { 0, 6, 0, 0, 0, 0, 2, 8, 0 },
-            { 0, 0, 0, 4, 1, 9, 0, 0, 5 },
-            { 0, 0, 0, 0, 8, 0, 0, 7, 9 }
+            { 3, 5, 0, 6, 0, 2, 0, 0, 4 },
+            { 0, 0, 7, 0, 4, 0, 0, 1, 3 },
+            { 0, 6, 9, 8, 3, 1, 0, 0, 7 },
+            { 5, 0, 3, 0, 0, 0, 0, 9, 6 },
+            { 0, 0, 0, 3, 0, 0, 7, 4, 5 },
+            { 9, 4, 6, 0, 0, 0, 8, 0, 0 },
+            { 6, 9, 2, 4, 0, 0, 0, 0, 8 },
+            { 8, 0, 0, 7, 0, 3, 0, 0, 0 },
+            { 0, 0, 4, 0, 2, 0, 0, 0, 1 }
     };
 
     // Sudoku nivel medio
     static int sudokuMedio[][] = { // Declaración de una matriz para el sudoku medio
-            { 0, 2, 0, 6, 0, 8, 0, 0, 0 },
-            { 5, 8, 0, 0, 0, 9, 7, 0, 0 },
-            { 0, 0, 0, 0, 4, 0, 0, 0, 0 },
-            { 3, 7, 0, 0, 0, 0, 5, 0, 0 },
-            { 6, 0, 0, 0, 0, 0, 0, 0, 4 },
-            { 0, 0, 8, 0, 0, 0, 0, 1, 3 },
-            { 0, 0, 0, 0, 2, 0, 0, 0, 0 },
-            { 0, 0, 9, 8, 0, 0, 0, 3, 6 },
-            { 0, 0, 0, 3, 0, 6, 0, 9, 0 }
+            { 6, 8, 0, 0, 0, 0, 0, 1, 7 },
+            { 0, 0, 5, 0, 0, 3, 0, 0, 0 },
+            { 0, 0, 0, 0, 7, 0, 6, 5, 0 },
+            { 0, 0, 0, 4, 3, 0, 0, 0, 8 },
+            { 3, 9, 8, 7, 2, 0, 4, 6, 0 },
+            { 0, 6, 7, 5, 9, 0, 1, 2, 3 },
+            { 5, 3, 0, 0, 0, 7, 2, 0, 0 },
+            { 0, 0, 0, 0, 6, 0, 0, 0, 1 },
+            { 0, 4, 6, 0, 8, 2, 0, 0, 0 }
     };
 
     // Sudoku nivel dificil
-        static int sudokuDificil[][] = { // Declaración de una matriz para el sudoku difícil
-            { 0, 0, 0, 6, 0, 0, 4, 0, 0 },
-            { 7, 0, 0, 0, 0, 3, 6, 0, 0 },
-            { 0, 0, 0, 0, 9, 1, 0, 8, 0 },
-            { 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-            { 0, 5, 0, 1, 8, 0, 0, 0, 3 },
-            { 0, 0, 0, 3, 0, 6, 0, 4, 5 },
-            { 0, 4, 0, 2, 0, 0, 0, 6, 0 },
-            { 9, 0, 3, 0, 0, 0, 0, 0, 0 },
-            { 0, 2, 0, 0, 0, 0, 1, 0, 0 }
+    static int sudokuDificil[][] = { // Declaración de una matriz para el sudoku difícil
+            { 0, 1, 0, 0, 3, 0, 0, 0, 0 },
+            { 7, 0, 0, 0, 4, 0, 1, 0, 0 },
+            { 0, 2, 0, 0, 0, 0, 3, 7, 0 },
+            { 0, 5, 7, 2, 0, 0, 4, 0, 0 },
+            { 0, 9, 0, 5, 0, 0, 2, 0, 0 },
+            { 2, 0, 0, 6, 1, 0, 0, 0, 3 },
+            { 0, 0, 9, 0, 0, 1, 0, 0, 7 },
+            { 0, 0, 2, 4, 9, 0, 5, 0, 1 },
+            { 8, 0, 0, 0, 2, 0, 6, 0, 0 }
     };
 
     // Variable que almacenará el tablero seleccionado aleatoriamente
@@ -89,7 +89,7 @@ public class act3 {
         return copia; // Retorna la matriz copiada
     }
 
-    public static void imprimirTablero() { 
+    public static void imprimirTablero() {
         for (int fila = 0; fila < SIZE; fila++) { // Bucle for que recorre cada fila desde 0 hasta SIZE-1
             if (fila % 3 == 0 && fila != 0) { // Condicional que verifica si la fila es múltiplo de 3 y no es la primera fila
                 System.out.println("------+-------+------");
@@ -133,9 +133,9 @@ public class act3 {
             for (int j = inicioColumna; j < inicioColumna + 3; j++) { // Bucle for que recorre las 3 columnas del cuadro 3x3
                 if (tablero[i][j] == numero) { // Condicional que verifica si el número ya existe en el cuadro 3x3
                     return false; // Retorna false si el número ya está presente en el cuadro 3x3
-                } 
-            } 
-        } 
+                }
+            }
+        }
 
         return true; // Retorna true si el número es seguro de colocar en la posición especificada
     }
@@ -151,11 +151,10 @@ public class act3 {
 
                             if (resolverSudoku()) { // Llamada recursiva para resolver el resto del sudoku
                                 return true; // Retorna true si la solución es exitosa
-                            } // Fin del condicional de llamada recursiva
+                            }
 
                             // Backtrack
-                            tablero[fila][columna] = 0; // Restaura la celda a 0 (backtracking) si la solución no
-                                                        // funciona
+                            tablero[fila][columna] = 0; // Restaura la celda a 0 (backtracking) si la solución no funciona
                         }
                     }
                     return false; // Retorna false si ningún número del 1 al 9 funciona en esta posición
